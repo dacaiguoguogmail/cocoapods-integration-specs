@@ -1,0 +1,30 @@
+{
+  "name": "BananaLib",
+  "version": "1.0",
+  "authors": [
+    "Banana Corp",
+    {
+      "Monkey Boy": "monkey@banana-corp.local"
+    }
+  ],
+  "homepage": "http://banana-corp.local/banana-lib.html",
+  "summary": "Chunky bananas!",
+  "description": "Full of chunky bananas.",
+  "source": {
+    "git": "http://banana-corp.local/banana-lib.git",
+    "tag": "v1.0"
+  },
+  "license": {
+    "type": "MIT",
+    "text": "Permission is hereby granted ..."
+  },
+  "source_files": "",
+  "preserve_paths": "FrameworkLocation",
+  "vendored_frameworks": "FrameworkLocation/vendor/vendor.framework",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}
