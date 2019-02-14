@@ -7,13 +7,13 @@ Inspecting targets to integrate
   Using `ARCHS` setting to build architectures of target `Pods-SampleApp`: (`$(ARCHS_STANDARD_64_BIT)`)
 
 Fetching external sources
--> Pre-downloading: `BananaLib` from `https://github.com/dacaiguoguogmail/anana-lib.git`
+-> Pre-downloading: `BananaLib` from `https://github.com/dacaiguoguogmail/banana-lib.git`
  > Git download
  > Git download
-     $ GIT_BIN clone https://github.com/dacaiguoguogmail/banana-lib.git ROJECT/Pods/BananaLib --template= --single-branch --depth 1
+     $ GIT_BIN clone https://github.com/dacaiguoguogmail/banana-lib.git PROJECT/Pods/BananaLib --template= --single-branch --depth 1
      Cloning into 'PROJECT/Pods/BananaLib'...
   $ GIT_BIN -C PROJECT/Pods/BananaLib rev-parse HEAD
-  e8c6818822137d2300977bafa4b6f9b9bf978ab6
+  aeeb86048596acfc1603440d8d178393210f57a2
 -> Fetching podspec for `Realm` from `https://gist.githubusercontent.com/segiddins/3a6d67837e0f84ea2f3f/raw/6867e04999d2e947fdefe7c9ff065c29815735cd/Realm.podspec`
 -> Pre-downloading: `RealmSwift` from `https://github.com/realm/realm-cocoa.git`, tag `v0.94.1`
  > Git download
@@ -42,6 +42,7 @@ Comparing resolved specification to the sandbox manifest
   A RealmSwift
 
 Downloading dependencies
+
 -> Installing BananaLib (1.0)
 
 -> Installing Realm (0.94.1)

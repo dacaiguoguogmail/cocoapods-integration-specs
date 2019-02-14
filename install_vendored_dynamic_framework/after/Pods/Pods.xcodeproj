@@ -5,6 +5,11 @@ File References:
   - iOS:
     - Foundation.framework
 - Pods:
+  - BananaLib:
+    - Frameworks:
+      - vendor.framework
+    - Support Files:
+      - BananaLib.xcconfig
   - Realm:
     - Frameworks:
       - Realm.framework
@@ -47,6 +52,30 @@ File References:
 
 
 Targets:
+- BananaLib:
+    Build Phases: []
+    Build Configurations:
+    - Debug:
+        Build Settings:
+          ARCHS: "$(ARCHS_STANDARD_64_BIT)"
+          ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+          CODE_SIGN_IDENTITY: iPhone Developer
+          IPHONEOS_DEPLOYMENT_TARGET: '8.0'
+          LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks"
+          SDKROOT: iphoneos
+          TARGETED_DEVICE_FAMILY: '1,2'
+        Base Configuration: BananaLib.xcconfig
+    - Release:
+        Build Settings:
+          ARCHS: "$(ARCHS_STANDARD_64_BIT)"
+          ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+          CODE_SIGN_IDENTITY: iPhone Developer
+          IPHONEOS_DEPLOYMENT_TARGET: '8.0'
+          LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks"
+          SDKROOT: iphoneos
+          TARGETED_DEVICE_FAMILY: '1,2'
+          VALIDATE_PRODUCT: 'YES'
+        Base Configuration: BananaLib.xcconfig
 - Pods-SampleApp:
     Build Phases:
     - Headers:

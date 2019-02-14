@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   BananaLib:
-    :commit: e8c6818822137d2300977bafa4b6f9b9bf978ab6
+    :commit: aeeb86048596acfc1603440d8d178393210f57a2
     :git: https://github.com/dacaiguoguogmail/banana-lib.git
   RealmSwift:
     :git: https://github.com/realm/realm-cocoa.git

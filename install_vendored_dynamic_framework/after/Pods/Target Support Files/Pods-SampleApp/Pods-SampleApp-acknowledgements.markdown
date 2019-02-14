@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## BananaLib
+
+Permission is hereby granted ...
+
 ## Realm
 
 TABLE OF CONTENTS
