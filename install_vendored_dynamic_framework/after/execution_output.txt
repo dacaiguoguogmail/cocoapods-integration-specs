@@ -7,6 +7,13 @@ Inspecting targets to integrate
   Using `ARCHS` setting to build architectures of target `Pods-SampleApp`: (`$(ARCHS_STANDARD_64_BIT)`)
 
 Fetching external sources
+-> Pre-downloading: `BananaLib` from `https://github.com/dacaiguoguogmail/anana-lib.git`
+ > Git download
+ > Git download
+     $ GIT_BIN clone https://github.com/dacaiguoguogmail/banana-lib.git ROJECT/Pods/BananaLib --template= --single-branch --depth 1
+     Cloning into 'PROJECT/Pods/BananaLib'...
+  $ GIT_BIN -C PROJECT/Pods/BananaLib rev-parse HEAD
+  e8c6818822137d2300977bafa4b6f9b9bf978ab6
 -> Fetching podspec for `Realm` from `https://gist.githubusercontent.com/segiddins/3a6d67837e0f84ea2f3f/raw/6867e04999d2e947fdefe7c9ff065c29815735cd/Realm.podspec`
 -> Pre-downloading: `RealmSwift` from `https://github.com/realm/realm-cocoa.git`, tag `v0.94.1`
  > Git download
@@ -30,10 +37,12 @@ Fetching external sources
 Resolving dependencies of `Podfile`
 
 Comparing resolved specification to the sandbox manifest
+  A BananaLib
   A Realm
   A RealmSwift
 
 Downloading dependencies
+-> Installing BananaLib (1.0)
 
 -> Installing Realm (0.94.1)
  > Http download
@@ -1005,6 +1014,7 @@ Generating Pods project
     - Adding resources
     - Linking headers
   - Installing Pod Targets
+    - Installing target `BananaLib` iOS 8.0
     - Installing target `Realm` iOS 8.0
     - Installing target `RealmSwift` iOS 8.0
       - Generating module map file at `Pods/Target Support Files/RealmSwift/RealmSwift.modulemap`
@@ -1035,4 +1045,4 @@ Integrating target `Pods-SampleApp` (`SampleApp.xcodeproj` project)
   - Running post install hooks
     - cocoapods-stats from `cocoapods-stats/lib/cocoapods_plugin.rb`
 
--> Pod installation complete! There are 2 dependencies from the Podfile and 2 total pods installed.
+-> Pod installation complete! There are 3 dependencies from the Podfile and 3 total pods installed.
